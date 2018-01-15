@@ -261,16 +261,16 @@ div.upload input, div.image-upload input {
     font-weight: 600;
     }
     .overlay.homi {
-    /* position: absolute; */
     top: 0px;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 92%;
-    width: 98%;
+    height: 90%;
+    width: 101%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
+    margin-left: 0px;
     }
 }
 
