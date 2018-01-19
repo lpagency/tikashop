@@ -43,6 +43,14 @@
             onLoad: function(product){
                 related(product.bullet_3);
 
+                $(".add-to-cart").each(function()
+                {
+                  $(".add-to-cart").click(function()
+                  {
+                      $('#myModal-marcha').modal('show');
+                  });
+                });
+
                 if (product.bullet_1 != "" ){
                     $.get(site_base + "/article/tag?tag="+product.bullet_1, function(data)
                     {

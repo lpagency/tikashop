@@ -47,9 +47,14 @@
             'templateOrigin' : '#product_template',
             'tag' : '',
             'ignore_stock' : true,
-            'onLoad':function(){
-               // $('.ellipsis').ellipsis();
-               // $(".ellipsis").dotdotdot();
+            'onLoad':function(products){
+                $(".add-to-cart").each(function()
+                {
+                  $(".add-to-cart").click(function()
+                  {
+                      $('#myModal-marcha').modal('show');
+                  });
+                });
              }
         };
          $(document).ecommerce({
