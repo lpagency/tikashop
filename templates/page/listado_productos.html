@@ -81,10 +81,13 @@
 <script type="text/javascript">
   $(document).ready(function()
   {
-    $(".add-to-cart").click(function()
+    setTimeout(function()
     {
-      $('#modal-marcha').modal('show');
-    });
+      $(".add-to-cart").click(function()
+      {
+        $('#modal-marcha').modal('show');
+      });
+    },2000);
   });
 </script>
 
