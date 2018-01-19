@@ -48,7 +48,6 @@
             'tag' : '',
             'ignore_stock' : true,
             'onLoad':function(products){
-                console.log(products);
              }
         };
          $(document).ecommerce({
@@ -77,6 +76,16 @@
     });
 
     });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function()
+  {
+    $(".add-to-cart").click(function()
+    {
+      $('#myModal-marcha').modal('show');
+    });
+  });
 </script>
 
 
