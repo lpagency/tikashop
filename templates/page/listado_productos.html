@@ -48,13 +48,7 @@
             'tag' : '',
             'ignore_stock' : true,
             'onLoad':function(products){
-                $(".add-to-cart").each(function()
-                {
-                  $(".add-to-cart").click(function()
-                  {
-                      $('#myModal-marcha').modal('show');
-                  });
-                });
+                console.log(products);
              }
         };
          $(document).ecommerce({
