@@ -38,10 +38,12 @@ li{
 
 .banner-tika{
     position: relative;
-    top: -100px;
     color: white;
     font-size: 40px;
     width: 600px;
+    top: 198px;
+    max-height: 152px;
+    overflow: hidden;
     text-align: center;
 }
 
