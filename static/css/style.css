@@ -151,8 +151,8 @@ div.upload input, div.image-upload input {
 }
 
 .container {
-    padding-right: 4px;
-    padding-left: 8px;
+    padding-right: 11px;
+    padding-left: 0px;
     margin-right: auto;
     margin-left: auto;
 }
