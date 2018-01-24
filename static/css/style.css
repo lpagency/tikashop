@@ -217,13 +217,12 @@ div.upload input, div.image-upload input {
 }
 
 .overlay.homi {
-    /*position: absolute;*/
     top: 0px;
     bottom: 0;
-    left: 0;
+    left: -6px;
     right: 0;
     height: 90%;
-    width: 99%;
+    width: 98.6%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(52, 58, 60, 0.51);
