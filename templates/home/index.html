@@ -99,48 +99,52 @@
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
-      <div class="item active" style="background:url('{{ read_image(site.name + '_img_slider_1') }}'); height:350px; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center; 
-      " data-img-width="1600" data-img-height="890" data-diff="100">
-          {% if is_admin %}
-            <div class="image-upload visible-movil" style="top:80px;">
-               <label for="img_slider_1">
-                   <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-               </label>
-               <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_1" name="image" id="img_slider_1" >
-           </div>
-                 
-           {% end %}
-           <div class=" text-left banner-tika {{editabletext}}" text-id="{{ site.name + 'text_kin_banner_1' }}">{{ read_text(site.name +  'text_kin_banner_1') }}</div>
+      <div class="item active">
+        <div style="background:url('{{ read_image(site.name + '_img_slider_1') }}'); height:350px; width:100%; filter: grayscale(0%) brightness(50%);-webkit-filter: grayscale(0%) brightness(50%); background-repeat:no-repeat; background-size:cover; background-position:center; 
+        " data-img-width="1600" data-img-height="890" data-diff="100">
+            {% if is_admin %}
+              <div class="image-upload visible-movil" style="top:80px;">
+                 <label for="img_slider_1">
+                     <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                 </label>
+                 <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_1" name="image" id="img_slider_1" >
+             </div>
+                   
+             {% end %}
+        </div>
+        <div class=" text-left banner-tika {{editabletext}}" text-id="{{ site.name + 'text_kin_banner_1' }}">{{ read_text(site.name +  'text_kin_banner_1') }}</div>
       </div>
-     
 
 
 <!-- **otro** -->
-      <div class="mov item " style="background:url('{{ read_image(site.name + '_img_slider_2') }}'); height:350px; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
-             {% if is_admin %}
-            <div class="image-upload visible-movil" style="top:80px;">
-               <label for="img_slider_2">
-                   <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-               </label>
-               <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_2" name="image" id="img_slider_2" >
-           </div>
-          
-           {% end %}
-           <div class=" text-left banner-tika {{editabletext}}" text-id="{{ site.name + 'text_kin_banner_2' }}">{{ read_text(site.name +  'text_kin_banner_2') }}</div>
-
+      <div class="mov item ">
+        <div style="background:url('{{ read_image(site.name + '_img_slider_2') }}'); height:350px; width:100%; filter: grayscale(0%) brightness(50%);-webkit-filter: grayscale(0%) brightness(50%); background-repeat:no-repeat; background-size:cover; background-position:center;" data-img-width="1600" data-img-height="890" data-diff="100">
+               {% if is_admin %}
+              <div class="image-upload visible-movil" style="top:80px;">
+                 <label for="img_slider_2">
+                     <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                 </label>
+                 <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_2" name="image" id="img_slider_2" >
+             </div>
+            
+             {% end %}
+        </div>
+        <div class=" text-left banner-tika {{editabletext}}" text-id="{{ site.name + 'text_kin_banner_2' }}">{{ read_text(site.name +  'text_kin_banner_2') }}</div>
       </div>
-    
-      <div class="mov item " style="background:url('{{ read_image(site.name + '_img_slider_3') }}'); height:350px; width:100%; background-repeat:no-repeat; background-size:cover; background-position:center; " data-img-width="1600" data-img-height="890" data-diff="100">
-         {% if is_admin %}
-            <div class="image-upload visible-movil" style="top:80px;">
-               <label for="img_slider_3">
-                   <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-               </label>
-               <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_3" name="image" id="img_slider_3" >
-           </div>
-        
-           {% end %}
-           <div class=" text-left banner-tika {{editabletext}}" text-id="{{ site.name + 'text_kin_banner_3' }}">{{ read_text(site.name +  'text_kin_banner_3') }}</div>
+
+      <div class="mov item ">
+        <div style="background:url('{{ read_image(site.name + '_img_slider_3') }}'); height:350px; width:100%; filter: grayscale(0%) brightness(50%);-webkit-filter: grayscale(0%) brightness(50%); background-repeat:no-repeat; background-size:cover; background-position:center; " data-img-width="1600" data-img-height="890" data-diff="100">
+           {% if is_admin %}
+              <div class="image-upload visible-movil" style="top:80px;">
+                 <label for="img_slider_3">
+                     <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                 </label>
+                 <input type="file" class="editableimage" image-id="{{ site.name }}_img_slider_3" name="image" id="img_slider_3" >
+             </div>
+          
+             {% end %}
+        </div>
+        <div class=" text-left banner-tika {{editabletext}}" text-id="{{ site.name + 'text_kin_banner_3' }}">{{ read_text(site.name +  'text_kin_banner_3') }}</div>
       </div>
     </div>
 
