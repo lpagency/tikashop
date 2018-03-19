@@ -2,7 +2,7 @@
     position: relative;
     display: block;
     padding: 16px 17px;
-    font-weight: 300;
+    font-weight: bold;
     font-size: 14px;
 }
 
@@ -57,6 +57,7 @@
     overflow: hidden;
     text-decoration: none!important;
     color: white;
+    font-weight: bold !important;
     background-color: transparent;
     text-align: center;
     cursor: pointer;
@@ -122,7 +123,7 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
 .w3-dropdown-content a {
     padding: 6px 16px;
     display: block;
-    font-weight: 300;
+    font-weight: bold;
     color: rgba(128, 128, 128, 0.62);
 
 }
