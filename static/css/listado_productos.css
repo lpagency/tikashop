@@ -18,6 +18,10 @@
     margin-bottom: 20px;
 }
 
+a.subcateg {
+    cursor: pointer;
+}
+
 .overlay {
     position: absolute;
     top: 0;
