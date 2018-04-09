@@ -396,6 +396,7 @@ div.upload input, div.image-upload input {
 @media (max-width: 550px){
 
     .tipografia-btn-carro {
+        width: 45% !important;
         font-size: 10px !important;
     }
 }
