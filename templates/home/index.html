@@ -48,6 +48,7 @@
             'templateOrigin' : '#product_template',
             'tag' : '',
             'ignore_stock' : true,
+            'infinite_scroll': true,
             'onLoad':function(){
                // $('.ellipsis').ellipsis();
                // $(".ellipsis").dotdotdot();
@@ -58,7 +59,8 @@
        'animation' : 'simple',
        'base_url' : base_url,
        'checkout_url' :  checkout_url,
-       'products_per_page' : 9
+       'products_per_page' : 9,
+               'infinite_scroll': true
      });
 
         $('.product-list').ecommerce('product_box', config);
