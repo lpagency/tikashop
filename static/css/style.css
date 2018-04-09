@@ -393,7 +393,12 @@ div.upload input, div.image-upload input {
 }
 
 }
+@media (max-width: 550px){
 
+    .tipografia-btn-carro {
+        font-size: 10px !important;
+    }
+}
 @media (max-width: 414px){
     .image.homi {
     width: 110%;
@@ -403,8 +408,7 @@ div.upload input, div.image-upload input {
     max-height: 250px;
     position: relative;
     right: 14px;
-}
-
+    }
 }
 
 
