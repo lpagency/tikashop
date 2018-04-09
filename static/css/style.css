@@ -276,7 +276,13 @@ div.upload input, div.image-upload input {
     color: #c5c1c1;
     background-color: transparent;
 }
+.tipografia-btn-carro{
+    color: white ;
+    font-size: 13px ;
+    font-family: 'Open Sans', sans-serif ;
+    font-weight: 400px ;
 
+}
 /*------------------------------------Responsive-------------------------------------------------------*/
 
 @media (max-width: 1199px){
