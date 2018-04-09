@@ -76,7 +76,7 @@ $(document).ready(function()
         'tag': tag,
         'ignore_stock': false,
         'infinite_scroll': false,
-        'maxProducts': 100,
+        //'maxProducts': 100,
         'checkout_url': checkout_url,
         'column': 'name',
         'direction': 'asc',
