@@ -1,7 +1,6 @@
 
 <script type="text/template" id="product_template" class="hidden">
   <div class="col-md-4 col-sm-4 col-xs-12 art-hi">
-
     <div class="container pro">
       <img src="{{! images[0]['thumb_500'] }}" alt="" class="image" >
       <p class="inf ellipsis multiline">{{! name }}</p>
@@ -9,89 +8,69 @@
       <p class="separa"> | </p>
       <p class="inf4 ellipsis multiline">{{! bullet_2 }}</p>
       <p class="inf2 ellipsis multiline">{{! main_price|money}}</p>
-  <div class="overlay">
-      <i class="fa fa-plus-circle text" aria-hidden="true" data-toggle="modal" data-target="#myModal-pro_{{! id }}"></i>
-      <i class="fa fa-shopping-cart pro add-to-cart btn-success car" 
-        product-id="{{! id }}" 
-        product-name="{{! name }}" 
-        product-price="{{! main_price }}" 
-        product-upp="{{! upp }}" 
-        product-img="{{! images[0]['thumb_200'] }}"
-        class="add-to-cart add-to-cart-animation" 
-        data-toggle="modal" 
-        data-target="#myModal" 
-        product-sku="{{! sku }}"
-        product-weight="{{! weight }}"
-        lp-cart-add></i>
-  </div>
-</div>
+      <div class="overlay">
+        <a href="!#" data-toggle="modal" data-target="#myModal-pro_{{! id }}">
+          <i class="fa fa-plus-circle text" aria-hidden="true"></i>
+        </a>
+        <a href="!#" class="add-to-cart">
+          <i class="fa fa-shopping-cart pro btn-success car" 
+            product-id="{{! id }}" 
+            product-name="{{! name }}" 
+            product-price="{{! main_price }}" 
+            product-upp="{{! upp }}" 
+            product-img="{{! images[0]['thumb_200'] }}"
+            class="add-to-cart add-to-cart-animation" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            product-sku="{{! sku }}"
+            product-weight="{{! weight }}"
+            lp-cart-add>
+          </i>
+        </a>
+      </div>
+    </div>
   </div> 
 
-    <!-- **modal descripcion producto** -->
-      <!-- Modal -->
-      <div class="modal fade" id="myModal-pro_{{! id }}" role="dialog">
-        <div class="modal-dialog">
-
-          <!-- Modal content-->
-          <div class="modal-content pro">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-              <h4 class="modal-title text-center">Descripción del producto</h4>
-          </div>
-          <div class="modal-body">
-              <img src="{{! images[0]['thumb_500'] }}" alt="" class="image-mod" >
-              <p>{{! name }}</p>
-              <p>Precio: {{! main_price|money}}</p>
-              <p>{{! description }}</p>
-              <br>
-              <p><b>*<u>Importante:</u></b></p>
-              <p>Si haces tu pedido entre jueves y domingo, se entregara el martes durante la tarde.</p> 
-              <p>Si haces tu pedido entre lunes y miércoles, se entrega el viernes durante la tarde.</p>
-              <br>
-              <button 
-              type="button" 
-              class="btn add-to-cart btn-default com" 
-              product-id="{{! id }}" 
-              product-name="{{! name }}" 
-              product-price="{{! main_price }}" 
-              product-upp="{{! upp }}" 
-              product-img="{{! images[0]['thumb_200'] }}"
-              class="add-to-cart add-to-cart-animation" 
-              data-toggle="modal" 
-              data-target="#myModal" 
-              product-sku="{{! sku }}"
-              product-weight="{{! weight}}"
-              data-dismiss="modal"
-              lp-cart-add>AGREGAR AL CARRO</button>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-          </div>
-      </div>
-      
-  </div>
-</div>
-
-
-<!--MODAL MARCHA BLANCA-->
-    <!-- <div class="modal fade" id="modal-marcha" role="dialog">
-        <div class="modal-dialog modal-lg modal-xs" style="z-index: 100">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title titulos titulo1">MARCHA BLANCA</h4>
-                </div>
-                <div class="modal-body">
-                    <h4>Estamos en marcha blanca! Los pedidos pueden demorar hasta 4 días en su despacho!</h4>
-                </div>
-                <div class="modal-footer">
-                    <div>
-                        <button type="button" class="botones" data-dismiss="modal" id="busca2">VOLVER</button>
-                    </div>
-                </div>
-            </div>
+  <!-- **modal descripcion producto** -->
+  <!-- Modal -->
+  <div class="modal fade" id="myModal-pro_{{! id }}" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content pro">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center">Descripción del producto</h4>
         </div>
-    </div> -->
-    <!--END MODAL MARCHA BLANCA-->
-
-
+        <div class="modal-body">
+          <img src="{{! images[0]['thumb_500'] }}" alt="" class="image-mod" >
+          <p>{{! name }}</p>
+          <p>Precio: {{! main_price|money}}</p>
+          <p>{{! description }}</p>
+          <br>
+          <p><b>*<u>Importante:</u></b></p>
+          <p>Si haces tu pedido entre jueves y domingo, se entregara el martes durante la tarde.</p> 
+          <p>Si haces tu pedido entre lunes y miércoles, se entrega el viernes durante la tarde.</p>
+          <br>
+          <button 
+            type="button" 
+            class="btn add-to-cart btn-default com" 
+            product-id="{{! id }}" 
+            product-name="{{! name }}" 
+            product-price="{{! main_price }}" 
+            product-upp="{{! upp }}" 
+            product-img="{{! images[0]['thumb_200'] }}"
+            class="add-to-cart add-to-cart-animation" 
+            data-toggle="modal" 
+            data-target="#myModal" 
+            product-sku="{{! sku }}"
+            product-weight="{{! weight}}"
+            data-dismiss="modal"
+            lp-cart-add>AGREGAR AL CARRO</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </script>
