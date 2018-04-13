@@ -1,4 +1,4 @@
- <div class="container head-container">
+<div class="container head-container">
     <nav class="container navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container header">
             <div class="navbar-header page-scroll">
@@ -7,154 +7,90 @@
                     Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="http://es.tikachips.com/">
-                  <div style="position:relative">
-                         <div class="caja-logo">
-                             {% if is_admin %}
-                             <div class="image-upload lapiz visible-movil">
-                                <label for="img_header_logo">
-                                   <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-                               </label>
-                               <input type="file" class="editableimage" image-id="{{ site.name }}_header_logo" name="image" id="img_header_logo" >
-                           </div>
-                           {% end %}
-                           <img id="{{ site.name }}_header_logo" src="{{ read_image(site.name + '_header_logo', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_header_logo',) }}'" class="img-responsive logo" alt="item">
-                       </div>
-               </div>
-                     </a>
+                    <div style="position:relative">
+                        <div class="caja-logo">
+                            {% if is_admin %}
+                                <div class="image-upload lapiz visible-movil">
+                                    <label for="img_header_logo">
+                                        <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                                    </label>
+                                    <input type="file" class="editableimage" image-id="{{ site.name }}_header_logo" name="image" id="img_header_logo" >
+                                </div>
+                            {% end %}
+                            <img id="{{ site.name }}_header_logo" src="{{ read_image(site.name + '_header_logo', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_header_logo',) }}'" class="img-responsive logo" alt="item">
+                        </div>
+                    </div>
+                </a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="{{ site_base }}">HOME</a>
                     </li>
-                  <!-- <li class="dropdown">
-                      <a href="{{ site_base }}/listado_productos" class="colorr" data-toggle="dropdown" class="dropdown-toggle">TIKA CHIPS <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=patagonia">Patagonia</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=furiosas">Furiosas</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=tika_tortikas">Chiloé</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=zapallo">Zapallo</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=merken">Merkén</a></li>
-                        </ul>
-                      </li> -->
-                      <div class="w3-dropdown-hover">
+                    <div class="w3-dropdown-hover">
                         <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=chips'">TIKA CHIPS <b class="caret"></b></button>
                         <div class="w3-dropdown-content w3-border">
-                          <li class="dropdown-submenu">
-                            <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=patagonia">Patagonia</a></li>
-                            <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=furiosas">Furiosas</a></li>
-                            <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=tika_chiloe">Chiloé</a></li>
-                            <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=pack_colacion">Pack Colación</a></li>
-                            <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=merken">Merkén</a></li>
-                          </li>
+                            <li class="dropdown-submenu">
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=patagonia">Patagonia</a></li>
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=furiosas">Furiosas</a></li>
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=tika_chiloe">Chiloé</a></li>
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=pack_colacion">Pack Colación</a></li>
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=merken">Merkén</a></li>
+                            </li>
                         </div>
-                      </div>
-                 <!--      <li class="dropdown">
-                        <a href="{{ site_base }}/listado_productos" class="colorr" data-toggle="dropdown" class="dropdown-toggle"  >TIKA STIXS <b class="caret"></b></a>
-                          <ul class="dropdown-menu">
-                            <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=palafito">Palafito</a></li>
-                          </ul>
-                      </li> -->
-                      <div class="w3-dropdown-hover">
+                    </div>
+                    <div class="w3-dropdown-hover">
                         <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=stixs'">TIKA STIXS <b class="caret"></b></button>
                         <div class="w3-dropdown-content w3-border">
-                          <li class="dropdown-submenu">
-                            <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=palafito">Palafito</a></li>
-                          </li>
+                            <li class="dropdown-submenu">
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=palafito">Palafito</a></li>
+                            </li>
                         </div>
-                      </div>
-                    <!--   <li class="dropdown">
-                        <a href="{{ site_base }}/listado_productos" class="colorr" data-toggle="dropdown" class="dropdown-toggle"  >TIKA CRACKERS <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=chia">Chia & Romero </a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=raspberry">Raspberry & Pimienta</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=curcuma">Curcuma & Sesamo</a></li>
-                        </ul>
-                      </li> -->
-                      <div class="w3-dropdown-hover">
+                    </div>
+                    <div class="w3-dropdown-hover">
                         <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=crackers'">TIKA CRACKERS <b class="caret"></b></button>
                         <div class="w3-dropdown-content w3-border">
-                          <li class="dropdown-submenu">
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=chia">Chia & Romero </a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=raspberry">Raspberry & Pimienta</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=curcuma">Curcuma & Sesamo</a></li>
-                          </li>
+                            <li class="dropdown-submenu">
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=chia">Chia & Romero </a></li>
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=raspberry">Raspberry & Pimienta</a></li>
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=curcuma">Curcuma & Sesamo</a></li>
+                            </li>
                         </div>
-                      </div>
-                  <!--     <li class="dropdown">
-                        <a href="{{ site_base }}/listado_productos" class="colorr" data-toggle="dropdown" class="dropdown-toggle"  >TIKA POP <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=caramelo">Caramelo & Sal de Mar</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=oliva">Oliva & Sal de Mar</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=vainilla"> Vainilla</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=chocolate">Chocolate</a></li>
-                        </ul>
-                      </li> -->
-                      <div class="w3-dropdown-hover">
+                    </div>
+                    <div class="w3-dropdown-hover">
                         <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=tika_pop'">TIKA POP <b class="caret"></b></button>
                         <div class="w3-dropdown-content w3-border">
-                          <li class="dropdown-submenu">
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=caramelo">Caramelo & Sal de Mar</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=oliva">Oliva & Sal de Mar</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=chocolate">Caramelo & Chocolate</a></li>
-                          </li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=coco">Coco, Caramelo & Vainilla</a></li>
+                            <li class="dropdown-submenu">
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=caramelo">Caramelo & Sal de Mar</a></li>
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=oliva">Oliva & Sal de Mar</a></li>
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=chocolate">Caramelo & Chocolate</a></li>
+                            </li>
+                            <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=coco">Coco, Caramelo & Vainilla</a></li>
                         </div>
-                      </div>
-                  <!--     <li class="dropdown">
-                        <a href="{{ site_base }}/listado_productos" class="colorr" data-toggle="dropdown" class="dropdown-toggle"  >TIKA NATIVAS <b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=andinas">Andinas</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=pepper">Pepper</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=pesto">Pesto</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=patriota">Patriota</a></li>
-                        </ul>
-                      </li> -->
-                     <div class="w3-dropdown-hover">
+                    </div>
+                    <div class="w3-dropdown-hover">
                         <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=nativas'">TIKA NATIVAS <b class="caret"></b> </button>
                         <div class="w3-dropdown-content w3-border">
-                          <li class="dropdown-submenu">
-                           <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=andinas">Andinas</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=pepper">Pepper</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=pesto">Pesto</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=patriota">Patriota</a></li>
-                          </li>
+                            <li class="dropdown-submenu">
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=andinas">Andinas</a></li>
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=pepper">Pepper</a></li>
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=pesto">Pesto</a></li>
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=patriota">Patriota</a></li>
+                            </li>
                         </div>
-                      </div>
-                      <div class="w3-dropdown-hover">
+                    </div>
+                    <div class="w3-dropdown-hover">
                         <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=tortikas'">TORTIKAS <b class="caret"></b></button>
                         <div class="w3-dropdown-content w3-border">
-                          <li class="dropdown-submenu">
-                            <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=quinoa">Quinoa + Sesamo Tostado</a></li>
-                            <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=hummus">Hummus + Tomate y Cebolla</a></li>
-                          </li>
+                            <li class="dropdown-submenu">
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=quinoa">Quinoa + Sesamo Tostado</a></li>
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=hummus">Hummus + Tomate y Cebolla</a></li>
+                            </li>
                         </div>
-                      </div>
-<!-- 
-                    <li class="dropdown">
-                        <a href="{{ site_base }}/listado_productos" class="colorr" data-toggle="dropdown" class="dropdown-toggle"  >TORTIKA<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=patagonia">Semillas</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos#tika_stixs">Hierbitas</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos#tika_tortikas">Trio</a></li>
-                        </ul>
-                      </li> -->
-
-             <!--          <div class="w3-dropdown-hover">
-                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=tortika'">TORTIKA <b class="caret"></b> </button>
-                        <div class="w3-dropdown-content w3-border">
-                          <li class="dropdown-submenu">
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=patagonia">Semillas</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos#tika_stixs">Hierbitas</a></li>
-                          <li class="color"><a class="color" href="{{ site_base }}/listado_productos#tika_tortikas">Trio</a></li>
-                          </li>
-                        </div>
-                      </div> -->
-
-                  
+                    </div>
                     <li id="open-cart" data-toggle="modal" data-target="#myModal"> 
-                      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                      <span class="units-total">0</span> 
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span class="units-total">0</span> 
                     </li>
                 </ul>
             </div>
