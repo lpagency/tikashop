@@ -1,6 +1,33 @@
 
 <script type="text/template" id="product_template" class="hidden">
-  <div class="col-md-4 col-sm-4 col-xs-12 art-hi">
+  <div class="col-md-4 col-sm-4 col-xs-12 art-hi hidden-xs">
+    <div class="container pro">
+      <img src="{{! images[0]['thumb_500'] }}" alt="" class="image" >
+      <p class="inf ellipsis multiline">{{! name }}</p>
+      <p class="inf3 ellipsis multiline">{{! bullet_1 }}</p>
+      <p class="separa"> | </p>
+      <p class="inf4 ellipsis multiline">{{! bullet_2 }}</p>
+      <p class="inf2 ellipsis multiline">{{! main_price|money}}</p>
+      <div class="overlay">
+        <i class="fa fa-plus-circle text" aria-hidden="true" data-toggle="modal" data-target="#myModal-pro_{{! id }}"></i>
+        <i class="fa fa-shopping-cart add-to-cart pro btn-success car" 
+          product-id="{{! id }}" 
+          product-name="{{! name }}" 
+          product-price="{{! main_price }}" 
+          product-upp="{{! upp }}" 
+          product-img="{{! images[0]['thumb_200'] }}"
+          class="add-to-cart add-to-cart-animation" 
+          data-toggle="modal" 
+          data-target="#myModal" 
+          product-sku="{{! sku }}"
+          product-weight="{{! weight }}"
+          lp-cart-add>
+        </i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 col-sm-4 col-xs-12 art-hi visible-xs">
     <div class="container pro">
       <img src="{{! images[0]['thumb_500'] }}" alt="" class="image" >
       <p class="inf ellipsis multiline">{{! name }}</p>
@@ -29,7 +56,7 @@
         </a>
       </div>
     </div>
-  </div> 
+  </div>
 
   <!-- **modal descripcion producto** -->
   <!-- Modal -->
