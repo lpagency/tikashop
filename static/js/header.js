@@ -55,4 +55,21 @@ var HeaderController = function()
 $(document).ready(function()
 {
     header_controller = new HeaderController();
+
+    if($(window).width() < 780)
+    {
+        $(".w3-red").each(function()
+        {
+            if($(this).hasClass('allow-default'))
+            {
+                console.log("llega1212!");
+                $(this).removeAttr('onclick');
+            }
+        });
+
+        $(document).on("touchstart", ".w3-dropdown-hover", function()
+        {
+            $(this).children(".w3-dropdown-content").toggle("fast");
+        });
+    }
 });
