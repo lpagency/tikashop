@@ -62,7 +62,6 @@ $(document).ready(function()
         {
             if($(this).hasClass('allow-default'))
             {
-                console.log("llega1212!");
                 $(this).removeAttr('onclick');
             }
         });
