@@ -432,54 +432,24 @@ div.upload input, div.image-upload input {
         font-size: 10px !important;
     }
 }
-@media (max-width: 414px){
-    .image.homi {
-    width: 110%;
-    object-fit: cover;
-    margin-bottom: 9%;
-    height: 250px;
-    max-height: 250px;
-    position: relative;
-    right: 14px;
+@media (max-width: 414px)
+{
+    .image.homi
+    {
+        width: 110%;
+        object-fit: contain;
+        margin-bottom: 9%;
+        height: auto;
+        max-height: 250px;
+        position: relative;
+        right: 14px;
     }
 }
 
-
-@media (max-width: 375px){
-    .image.homi {
-    width: 110%;
-    object-fit: cover;
-    margin-bottom: 10%;
-    height: 250px;
-    max-height: 250px;
-    position: relative;
-    right: 14px;
-}
-
-}
-
-@media (max-width: 360px){
-    .image.homi {
-    width: 110%;
-    object-fit: cover;
-    margin-bottom: 10%;
-    height: 250px;
-    max-height: 250px;
-    position: relative;
-    right: 14px;
-}
-
-}
-
-@media (max-width: 320px){
-    .image.homi {
-    width: 110%;
-    object-fit: cover;
-    margin-bottom: 13%;
-    height: 250px;
-    max-height: 250px;
-    position: relative;
-    right: 14px;
-}
-
+@media (max-width: 320px)
+{
+    .image.homi
+    {
+        margin-bottom: 13%;
+    }
 }
