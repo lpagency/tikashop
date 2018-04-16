@@ -27,15 +27,14 @@
 
             $(document).on("click", ".dropdown-toggle", function()
             {
-                if($("."+$(this).attr("id")).css("display") == "none")
+                if($("." + $(this).attr("id")).css("display") === "none")
                 {
-                    $("."+$(this).attr("id")).show();
+                    $("." + $(this).attr("id")).show();
                 }
                 else
                 {
-                    $("."+$(this).attr("id")).hide();
+                    $("." + $(this).attr("id")).hide();
                 }
-                console.log("aaaa");
             });
         });
     </script>
@@ -54,7 +53,7 @@
     <body id="lapimport">
         <section>
             <div class="container">
-                <div class="mobile img-mobile hidden-xs" style="background:url('{{ read_image(site.name + '_productos',500) }}'); height:350px; background-size:cover; margin-top:0px; filter: grayscale(0%) brightness(80%); -webkit-filter: grayscale(0%) brightness(80%); -moz-filter: grayscale(0%) brightness(80%); -ms-filter: grayscale(0%) brightness(80%);-o-filter: grayscale(0%) brightness(80%); background-position:center; margin-bottom: 40px;  width: 101%;" data-img-width="1600" data-img-height="1064" data-diff="100">
+                <div class="banner-listado-productos mobile img-mobile hidden-xs" style="background:url('{{ read_image(site.name + '_productos',500) }}');" data-img-width="1600" data-img-height="1064" data-diff="100">
                     {% if is_admin %}
                         <div class="image-upload part1 lapiz visible-movil">
                             <label for="img_productos">
