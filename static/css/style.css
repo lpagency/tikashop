@@ -1,4 +1,5 @@
-html, body {
+html, body
+{
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -6,10 +7,14 @@ html, body {
    font-family: 'Open Sans', sans-serif;
    overflow-x: hidden;
 }
-img.editablelink.img-editables, div.image-upload.img-editables{
+
+img.editablelink.img-editables, div.image-upload.img-editables
+{
     z-index: 1000;
 }
-.linea {
+
+.linea
+{
     height: 60px;
     box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.5);
     position: relative;
@@ -17,7 +22,14 @@ img.editablelink.img-editables, div.image-upload.img-editables{
     left: -38px;
 }
 
-.banner-titulo {
+.banner-principal
+{
+    height: 350px;
+    background-size: cover !important;
+}
+
+.banner-titulo
+{
   font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   font-size: 2.5rem;
@@ -25,7 +37,8 @@ img.editablelink.img-editables, div.image-upload.img-editables{
   padding: 1.0833rem 0 0 1.0833rem;
 }
 
-  .banner-titulo {
+.banner-titulo
+{
     color: #fcfcfa;
     padding: 0;
     position: absolute;
@@ -34,17 +47,19 @@ img.editablelink.img-editables, div.image-upload.img-editables{
     left: 0.8125rem;
     bottom: 0.8125rem;
     font-size: 3.875rem;
-  }
+}
 
-  .banner-titulo-alt {
+.banner-titulo-alt
+{
     padding: 1.0833rem 20.0833rem;
 }
 
-  .banner-titulo-alt {
+.banner-titulo-alt
+{
     left: 0;
     bottom: 1.25rem;
     width: 100%;
-  }
+}
 
 a{
     color: gray;
@@ -365,21 +380,36 @@ div.upload input, div.image-upload input {
 
 }
 
-@media (max-width: 767px){
-    .image.homi {
-    width: 110%;
-    object-fit: cover;
-    margin-bottom: 3%;
-    height: 250px;
-    max-height: 250px;
-    position: relative;
-    right: 14px;
-}
+@media (max-width: 767px)
+{
+    .image.homi
+    {
+        width: 110%;
+        object-fit: cover;
+        margin-bottom: 3%;
+        height: 250px;
+        max-height: 250px;
+        position: relative;
+        right: 14px;
+    }
 
+    .banner-principal
+    {
+        height: 230px;
+        background-size: contain !important;
+    }
 
-.espacio-1{
-  margin-top: 100px;
-}
+    .banner-titulo-alt
+    {
+        bottom: 5.25rem;
+        font-size: 25px;
+        padding: 0px;
+    }
+
+    .espacio-1
+    {
+      margin-top: 100px;
+    }
 
 }
 
