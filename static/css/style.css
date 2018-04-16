@@ -448,6 +448,16 @@ div.upload input, div.image-upload input {
 
 @media (max-width: 320px)
 {
+    a.navbar-brand
+    {
+        width: 68%;
+    }
+
+    .logo
+    {
+        bottom: -8px;
+    }
+
     .image.homi
     {
         margin-bottom: 13%;
