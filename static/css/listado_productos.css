@@ -1,16 +1,34 @@
-.container.pro {
+.container.pro
+{
   position: relative;
   width: 80%;
 }
 
-.image {
+.banner-listado-productos
+{
+    height:350px;
+    background-size:cover;
+    margin-top:0px;
+    filter: grayscale(0%) brightness(80%);
+    -webkit-filter: grayscale(0%) brightness(80%);
+    -moz-filter: grayscale(0%) brightness(80%);
+    -ms-filter: grayscale(0%) brightness(80%);
+    -o-filter: grayscale(0%) brightness(80%);
+    background-position:center;
+    margin-bottom: 40px;
+    width: 101%;
+}
+
+.image
+{
     display: block;
     width: 100%;
     height: 260px;
     object-fit: cover;
 }
 
-.image-mod {
+.image-mod
+{
     display: block;
     width: 100%;
     height: 340px;
@@ -18,11 +36,13 @@
     margin-bottom: 20px;
 }
 
-a.subcateg {
+a.subcateg
+{
     cursor: pointer;
 }
 
-.overlay {
+.overlay
+{
     position: absolute;
     top: 0;
     bottom: 0;
