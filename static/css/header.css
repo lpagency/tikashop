@@ -191,7 +191,7 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
     .navbar-fixed-top .navbar-collapse,
     .navbar-fixed-bottom .navbar-collapse
     {
-        max-height: 390px;
+        max-height: 402px;
     }
 
     .logo 
@@ -273,7 +273,8 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
     .fa-shopping-cart 
     {
         position: relative;
-        left: 18px;
+        left: 12px;
+        height: 50px;
         font-size: 35px !important;
         top: 7px;
         color: white;
@@ -293,5 +294,6 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
     {
         width: 100%;
         text-align: left;
+        padding-left: 20px;
     }
 }
