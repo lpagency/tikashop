@@ -188,6 +188,12 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
 
 @media (max-width: 767px)
 {
+    .navbar-fixed-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse
+    {
+        max-height: 390px;
+    }
+
     .logo 
     {
         width: 42%;
@@ -195,6 +201,30 @@ ul.w3-ul{list-style-type:none;padding:0;margin:0}ul.w3-ul li{padding:6px 2px 6px
         bottom: 8px;
         margin-left: -9px;
         left: 0%;
+    }
+
+    ::-webkit-scrollbar
+    {
+      -webkit-appearance: none;
+      width: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb
+    {
+      border-radius: 5px;
+      background-color: rgba(0,0,0,.5);
+      -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+    }
+
+    .navbar-default
+    {
+        background-color: rgb(128, 128, 128);
+    }
+
+    .units-total
+    {
+        left: 75px;
+        float: left;
     }
 
     .dropdown-menu
