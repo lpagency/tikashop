@@ -25,7 +25,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="{{ site_base }}">HOME</a>
+                        <a href="{{ site_base }}">TIKASHOP</a>
                     </li>
                     <div class="w3-dropdown-hover">
                         <button class="w3-btn w3-red allow-default" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=chips'">TIKA CHIPS <b class="caret"></b></button>
@@ -177,10 +177,10 @@
                             <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=hummus">Hummus + Tomate y Cebolla</a></li>
                         </div>
                     </div>
-                    <li id="open-cart" data-toggle="modal" data-target="#myModal"> 
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <div class="w3-dropdown-hover"> 
+                        <i id="open-cart" data-toggle="modal" data-target="#myModal" class="fa fa-shopping-cart" aria-hidden="true"></i>
                         <span class="units-total">0</span> 
-                    </li>
+                    </div>
                 </ul>
             </div>
         </div>
