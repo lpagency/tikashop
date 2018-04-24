@@ -335,21 +335,25 @@ hr.pap-2{
 
 }
 
-@media (max-width: 414px){
+@media (max-width: 414px)
+{
 .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 34px;
     right: 0;
     height: 65%;
-    width: 92%;
+    width: 73%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0, 0, 0, 0.5);
     margin-left: 14px;
 }
 
+.image{
+    object-fit: contain;
+}
 }
 
 @media (max-width: 375px){
@@ -357,10 +361,10 @@ hr.pap-2{
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 13px;
     right: 0;
     height: 65%;
-    width: 91%;
+    width: 83%;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0, 0, 0, 0.5);
@@ -374,11 +378,11 @@ hr.pap-2{
     }
     .overlay {
     position: absolute;
-    top: 0;
+    top: 15px;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 64.5%;
+    height: 57%;
     width: 89%;
     opacity: 0;
     transition: .5s ease;
