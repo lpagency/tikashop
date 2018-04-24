@@ -53,17 +53,17 @@ a.subcateg
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0, 0, 0, 0.5);
-    margin-left: 7px;
 }
 
-.container.pro:hover .overlay {
-  opacity: 1;
+.container.pro:hover .overlay
+{
+    opacity: 1;
 }
 
 
-.text {
+.text
+{
     background-color: white;
-/*    padding: 12px 15px 12px 15px;*/
     border-radius: 58px;
     right: 10px;
     position: relative;
@@ -73,7 +73,8 @@ a.subcateg
     margin-top: 105px;
 }
 
-.text2 {
+.text2
+{
     margin-top: -9%;
     border-radius: 0px;
     border: none;
