@@ -405,12 +405,18 @@ div.image-upload input
     .image.homi
     {
         width: 110%;
-        object-fit: cover;
+        object-fit: contain;
         margin-bottom: 9%;
-        height: 250px;
+        height: auto;
         max-height: 250px;
         position: relative;
         right: 14px;
+    }
+
+    .overlay.homi
+    {
+        height: 84.5%;
+        width: 100.5%;
     }
 }
 
