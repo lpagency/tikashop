@@ -663,6 +663,7 @@ ul.w3-ul li:last-child
     position: absolute;
     line-height: inherit;
 }
+
 /*--------------------------------------------------Responsive---------------------------*/
 @media (max-width: 1199px)
 {
