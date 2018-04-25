@@ -669,7 +669,6 @@ ul.w3-ul li:last-child
 /*--------------------------------------------------Responsive---------------------------*/
 @media (max-width: 1199px)
 {
-
     .logo
     {
         margin-left: -23px;
@@ -729,6 +728,29 @@ ul.w3-ul li:last-child
 
 @media (max-width: 768px)
 {
+
+    .w3-dropdown-menu
+    {
+        cursor: auto;
+        color: #000;
+        background-color: #fff;
+        display: none;
+        position: absolute;
+        min-width: 189px;
+        margin: 0;
+        padding: 0;
+        top: 47px;
+    }
+
+    .w3-dropdown-menu a
+    {
+        padding: 6px 16px;
+        display: block;
+        font-weight: 300;
+        color: rgba(128, 128, 128, 0.62);
+        font-size: 12px;
+    }
+
     .logo
     {
         width: 60%;
@@ -740,7 +762,7 @@ ul.w3-ul li:last-child
 
     .dropdown-menu
     {
-        position: relative;
+        position: absolute;
         box-shadow: none;
         background-color: #dad6d6 !important;
         border-color: #dad6d6;
@@ -748,6 +770,8 @@ ul.w3-ul li:last-child
         border-radius: 0px;
         margin: 0 0 0 0;
         width: 137%;
+        left: 0px !important;
+        min-width: 205px;
     }
 
     .navbar-nav.navbar-right:last-child
@@ -838,6 +862,8 @@ ul.w3-ul li:last-child
         border-radius: 0px;
         margin: 0 0 0 0;
         width: 137%;
+        left: auto !important;
+        min-width: 160px;
     }
 
     .w3-dropdown-click, .w3-dropdown-hover 
