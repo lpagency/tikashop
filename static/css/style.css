@@ -73,7 +73,7 @@ a:hover
 }
 
 li{
-	list-style: none;
+    list-style: none;
 }
 
 .texto_index
@@ -125,7 +125,6 @@ div.image-upload input
     max-height: 2.3em;
     font-weight: 100;
 }
-
 
 .hola
 {
@@ -306,19 +305,19 @@ div.image-upload input
 
 .container.homi:hover .overlay.homi
 {
-  opacity: 1;
+    opacity: 1;
 }
 
 .hom
 {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 
 }
 
@@ -378,6 +377,16 @@ div.image-upload input
         padding-left: 15px;
         margin-left: auto;
         width: 100%;
+    }
+
+    .banner-principal
+    {
+        background-size: contain !important;
+    }
+
+    .banner-titulo-alt
+    {
+        bottom: 5.25rem;
     }
 
     .gre
@@ -448,7 +457,7 @@ div.image-upload input
 
     .espacio-1
     {
-      margin-top: 100px;
+        margin-top: 100px;
     }
 
 }
