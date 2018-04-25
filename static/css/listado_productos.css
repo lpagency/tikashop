@@ -295,7 +295,7 @@ hr.pap-2
         bottom: 0;
         left: 0;
         right: 0;
-        height: 65%;
+        height: 63%;
         width: 86%;
         opacity: 0;
         transition: .5s ease;
@@ -313,6 +313,11 @@ hr.pap-2
         line-height: 30px;
         margin-top: 6px;
         margin-bottom: -33px;
+    }
+
+    .inf
+    {
+        margin-bottom: 18px;
     }
 }
 
