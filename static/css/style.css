@@ -369,6 +369,20 @@ div.image-upload input
     }
 }
 
+@media (max-width: 1024px)
+{
+    .overlay.homi
+    {
+        top: 24px;
+        height: 74.5%;
+    }
+
+    .image.homi
+    {
+        object-fit: contain;
+    }
+}
+
 @media (max-width: 991px)
 {
     .container
