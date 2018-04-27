@@ -393,6 +393,11 @@ div.image-upload input
         width: 100%;
     }
 
+    .overlay.homi
+    {
+        top: 0px;
+    }
+
     .banner-principal
     {
         background-size: contain !important;
