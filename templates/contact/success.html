@@ -8,7 +8,7 @@
 {% end %}
 
 {% block javascript %}
-<script type="text/javascript" src="{{ site_base }}/static/js/frubik.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/frubik.js"></script>
 <script type="text/javascript">
     $(document).ready(function()
     {
@@ -54,7 +54,7 @@
 {% end %}
 
 {% block css %}
-<link type="text/css" rel='stylesheet' href="{{ site_base }}/static/css/page.edit.css" />
+<link type="text/css" rel='stylesheet' href="{{ site_base }}/{{ nocache_static }}/css/page.edit.css" />
 <style type="text/css">
     .controls input, .controls textarea
     {
@@ -91,7 +91,7 @@
    <!--          <div class="text-center titulo-peq {{editabletext}}" text-id="{{ site.name + '_suu_2' }}"> {{ read_text(site.name +  '_suu_2') }}</div> -->
         </div>
     </div>
- 
+
 </section>
         <!-- registration -->
         <div class="container-fluid productlist">

@@ -9,8 +9,8 @@
 {% end %}
 
 {% block javascript %}
-<script type="text/javascript" src="{{ site_base }}/static/js/dermatologia.js"></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/frubik.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/dermatologia.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/frubik.js"></script>
 <script type="text/javascript">
     $(document).ready(function()
     {
@@ -76,16 +76,16 @@
                    <input type="file" class="editableimage" image-id="{{ site.name }}_banner_cate_li_nobu" name="image" id="img_banner_cate_li_nobu" >
                </div>
         {% end %}
-                <img id="{{ site.name }}_banner_cate_li_nobu" src="{{ read_image(site.name + '_banner_cate_li_nobu', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_cate_li_nobu',500) }}'" class="banner_uno_list hidden" alt="item">        
+                <img id="{{ site.name }}_banner_cate_li_nobu" src="{{ read_image(site.name + '_banner_cate_li_nobu', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_cate_li_nobu',500) }}'" class="banner_uno_list hidden" alt="item">
        </div>
-       
+
        <div class="col-md-12">
             <div class="box-text-gal">
                 <h1 class="text-center titulo {{editabletext}}" text-id="{{ site.name + '_til_li_no' }}"> {{ read_text(site.name +  '_til_li_no') }}</h1>
             </div>
 
         </div>
-    
+
 </section>
 
 
@@ -114,11 +114,11 @@
           {{ getArticleList(limit=1, html="page/article_home.html", tag='servicios,posicion 4') }}
         <!-- </div> -->
     </div>
-  
+
 </section>
 
 
-<!-- 
+<!--
 <section>
     <div class="container">
         <div class="row">

@@ -5,7 +5,7 @@
 {% block scripts %}
 {% end %}
 {% block css %}
-<link type="text/css" href='{{ site_base }}/static/css/event.css' rel='stylesheet' />
+<link type="text/css" href='{{ site_base }}/{{ nocache_static }}/css/event.css' rel='stylesheet' />
 {% end %}
 {% block header %}
 {% include '../home/inside_header.html' %}
@@ -23,7 +23,7 @@
                             <div class="post-date" style="height: 30px;">
                             </div>
                         </header>
-                        
+
                         <div class="content articulo-text" style="text-align:left;">
                             <div class="col-sm-8 content-picture-event" >
                                 <img src="{{ event['image_url'] }}" class="img-responsive lazy no-resize" data-original="{{ event["url"] }}" alt="item">
@@ -33,7 +33,7 @@
                                 <h2 class="h2-event-mm">{{ event["begin"].strftime("%b") }}</h2>
                                 <p class="p-event">{{event["begin"].strftime("%H:%M")}} Hrs</p>
                                 <p class="p-event">{{event['place']}}</p>
-                                
+
                             </div>
                             <div class="col-sm-12 especial text-left text-content-event">
                                 <p>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            
+
         </div>
         <div class="container-fluid productlist">
             <article>

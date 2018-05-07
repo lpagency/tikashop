@@ -4,23 +4,23 @@
 {% end %}
 {% block css %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ site_base }}/static/cssbt/style.css?v=5">
+    <link rel="stylesheet" href="{{ site_base }}/{{ nocache_static }}/cssbt/style.css?v=5">
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="{{ site_base }}/static/css/profile.css">
+    <link rel="stylesheet" type="text/css" href="{{ site_base }}/{{ nocache_static }}/css/profile.css">
 {% end %}
 {% block header %}
     {% include '../home/inside_header_profile.html' %}
 {% end %}
 
 {% block scripts %}
-<script type="text/javascript" src="{{ site_base }}/static/js/members/detail.js" ></script>
-<script type="text/javascript" src="{{ site_base }}/static/js/profile_contact.js"></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/members/detail.js" ></script>
+<script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/profile_contact.js"></script>
 {% end %}
 {% block body %}
     <div class="container-fluid-profile cart-list productlist" style="text-align:left;">
-        
+
         <div class="row">
-            
+
             <div class="widget col-sm-12 especial profile-company">
                 <div class="col-sm-12 especial profile-foto-top">
                     <div class="profile-company-logo">
@@ -31,7 +31,7 @@
                     <h2>
                     {{ profile["company_name"][0] }}
                     </h2>
-                    
+
                 </div>
             </div>
             <div class="col-sm-12 especial">
@@ -49,9 +49,9 @@
                         <!-- <li><a>{{ profile["url"][0] }}</a></li> -->
                     </ul>
                 </div>
-                
+
             </div>
-            
+
             {% if 'profile_img' in profile %}
             <div class="col-sm-12 profile-partner" >
                 <div class="col-sm-12 profile-title">
@@ -76,8 +76,8 @@
                 <hr>
             </div>
             {% end %}
-            
-            
+
+
             <div class="col-sm-12 profile-company-line">
                 <hr>
                 {% if "description_company" in profile %}
@@ -86,9 +86,9 @@
                     <p class="p-art">
                     {{ profile["description_company"][0] }}
                     </p>
-                    
+
                     <p style="width:100%; text-align: right;"><a></a></p>
-                    
+
                 </div>
                 {% end %}
 
@@ -98,9 +98,9 @@
                     <p class="p-art">
                     {{ profile["description"][0] }}
                     </p>
-                    
+
                     <p style="width:100%; text-align: right;"><a></a></p>
-                    
+
                 </div>
                 {% end %}
                 <div class="widget col-sm-12">
@@ -136,7 +136,7 @@
                 </div>
             </div>
         </div>
-        
+
     </div>
     <div class="container-fluid productlist">
             <article>
