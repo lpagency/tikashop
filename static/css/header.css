@@ -2,9 +2,9 @@
 {
     position: relative;
     display: block;
-    padding: 16px 17px;
+    padding: 14px 17px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .fa-shopping-cart
@@ -61,22 +61,23 @@ a.navbar-brand
     border-color: transparent;
 }
 
-.w3-btn, .w3-btn-block
+.w3-btn,
+.w3-btn-block
 {
     border: none;
     display: inline-block;
     outline: 0;
-    padding: 14px 17px;
+    padding: 14px 7px;
+    font-size: 12px;
     vertical-align: middle;
     overflow: hidden;
-    text-decoration: none!important;
+    text-decoration: none;
     color: white;
-    font-weight: bold !important;
+    font-weight: bold;
     background-color: transparent;
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
-    font-weight: 300;
 }
 
 .w3-btn:hover,.w3-btn-block:hover,
@@ -691,20 +692,8 @@ ul.w3-ul li:last-child
     .w3-btn,
     .w3-btn-block
     {
-        border: none;
-        display: inline-block;
-        outline: 0;
-        padding: 16px 11px;
-        vertical-align: middle;
-        overflow: hidden;
-        text-decoration: none!important;
-        color: white;
-        background-color: transparent;
-        text-align: center;
-        cursor: pointer;
-        white-space: nowrap;
-        font-weight: 300;
-        font-size: 11px;
+        padding: 19px 7px;
+        font-size: 9px;
     }
 
     .nav>li>a
@@ -793,8 +782,10 @@ ul.w3-ul li:last-child
     .w3-btn,
     .w3-btn-block
     {
-        font-size: 10px;
-        padding: 16px 10px;
+        font-size: 9px;
+        word-wrap: break-word;
+        font-weight: bold;
+        padding: 18px 5px;
     }
 
     .fa-shopping-cart
@@ -815,7 +806,7 @@ ul.w3-ul li:last-child
     .navbar-fixed-top .navbar-collapse,
     .navbar-fixed-bottom .navbar-collapse
     {
-        max-height: 420px;
+        max-height: 482px;
     }
 
     .logo 
