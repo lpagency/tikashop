@@ -782,11 +782,11 @@ ul.w3-ul li:last-child
     .w3-btn,
     .w3-btn-block
     {
-    font-size: 9px;
-    word-wrap: break-word;
-    font-weight: bold;
-    padding: 18px 5px;
-}
+        font-size: 9px;
+        word-wrap: break-word;
+        font-weight: bold;
+        padding: 18px 5px;
+    }
 
     .fa-shopping-cart
     {
