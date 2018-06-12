@@ -27,6 +27,37 @@ div.image-upload.img-editables
 {
     height: 350px;
     background-size: cover !important;
+    width:100%;
+    filter: grayscale(0%) brightness(70%);
+    -webkit-filter: grayscale(0%) brightness(70%);
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.letral-tikashop
+{
+    position: relative;
+    margin-top: -403px;
+    float:left;
+    left:40px;
+}
+
+.paxer-widget-calendar
+{
+    height: 272px;
+    width: 209px;
+    z-index:1000;
+}
+
+.margin
+{
+    margin-bottom:40px;
+    margin-top:40px;
+}
+
+.margin-bottom
+{
+    margin-bottom: 30px;
 }
 
 .banner-titulo
