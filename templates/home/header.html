@@ -89,7 +89,13 @@
                         </div>
                     </div>
                     <div class="w3-dropdown-hover">
-                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=tika_cereal_salvaje'">TIKA CEREAL SALVAJE</button>
+                        <button class="w3-btn w3-red allow-default" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=tika_cereal_salvaje'">TIKA CEREAL SALVAJE<b class="caret"></b></button>
+                        <div class="w3-dropdown-content w3-border">
+                            <li class="dropdown-submenu">
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=cereal_avena_cacao">Avena - Cacao</a></li>
+                                <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=cereal_quinoa">Avena - Quinoa</a></li>
+                            </li>
+                        </div>
                     </div>
                     <li id="open-cart" data-toggle="modal" data-target="#myModal"> 
                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -181,7 +187,11 @@
                         </div>
                     </div>
                     <div class="w3-dropdown-hover">
-                        <button class="w3-btn w3-red" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=tika_cereal_salvaje'">TIKA CEREAL SALVAJE </button>
+                        <button class="w3-btn w3-red allow-default" data-toggle="dropdown" tag="colecciones" onclick="window.location.href='{{ site_base }}/listado_productos?tag=tika_cereal_salvaje'">TIKA CEREAL SALVAJE <b class="caret"></b></button>
+                        <div class="dropdown-menu w3-border">
+                            <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=cereal_avena_cacao">Avena - Cacao</a></li>
+                            <li class="color"><a class="color" href="{{ site_base }}/listado_productos?tag=cereal_avena_quinoa">Avena - Quinoa</a></li>
+                        </div>
                     </div>
                     <div class="w3-dropdown-hover"> 
                         <i id="open-cart" data-toggle="modal" data-target="#myModal" class="fa fa-shopping-cart" aria-hidden="true"></i>
