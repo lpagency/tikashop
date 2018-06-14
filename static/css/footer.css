@@ -51,14 +51,15 @@
 
 .btn-form
 {
-    border-radius: 0 50px 50px 0;
+    background-color: #000;
+    font-size: 12px;
+    border-color: #fff;
+    border-radius: 0px 8px 8px 0px;
     position: relative;
     margin: 0;
     height: 30px;
     letter-spacing: 1px;
     color: #fff;
-    background: #425cbb;
-    border-color: #425cbb;
     bottom: 0px;
     width: 65px;
     left: 3%;
