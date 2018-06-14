@@ -8,7 +8,7 @@ html, body
    overflow-x: hidden;
 }
 
-img.editablelink.img-editables, 
+img.editablelink.img-editables,
 div.image-upload.img-editables
 {
     z-index: 1000;
@@ -40,13 +40,6 @@ div.image-upload.img-editables
     margin-top: -403px;
     float:left;
     left:40px;
-}
-
-.paxer-widget-calendar
-{
-    height: 272px;
-    width: 209px;
-    z-index:1000;
 }
 
 .margin
@@ -230,7 +223,7 @@ div.image-upload input
 .pin
 {
     float: left !important;
-    background: 
+    background:
      !important;
     font-size: 15px !important;
     padding: 12px 11px !important;
