@@ -40,12 +40,13 @@
 
 .validate-email
 {
+    left: 0px;
+    border: solid 1px #ccc;
+    border-right: 0px;
+    border-radius: 5px 0px 0px 5px;
     -webkit-appearance: none;
     background: #ffffff;
     padding: 0.8125em;
-    border-radius: 5px;
-    border: solid 1px #ccc;
-    left: 9%;
     height: 30px;
 }
 
@@ -61,8 +62,7 @@
     letter-spacing: 1px;
     color: #fff;
     bottom: 0px;
-    width: 65px;
-    left: 3%;
+    width: 25%;
 }
 
 .social-media
