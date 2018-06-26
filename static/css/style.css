@@ -34,6 +34,13 @@ div.image-upload.img-editables
     background-position:center;
 }
 
+.carousel-image
+{
+    height: 100%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
 .letral-tikashop
 {
     position: relative;
@@ -223,8 +230,6 @@ div.image-upload input
 .pin
 {
     float: left !important;
-    background:
-     !important;
     font-size: 15px !important;
     padding: 12px 11px !important;
     color: white !important;
@@ -391,6 +396,11 @@ div.image-upload input
         background-color: rgba(52, 58, 60, 0.51);
         margin-left: 0px;
     }
+    
+    .banner-principal
+    {
+        background-position: center !important;
+    }
 }
 
 @media (max-width: 1024px)
@@ -422,10 +432,6 @@ div.image-upload input
         top: 0px;
     }
 
-    .banner-principal
-    {
-        background-size: contain !important;
-    }
 
     .banner-titulo-alt
     {
@@ -487,8 +493,11 @@ div.image-upload input
 
     .banner-principal
     {
-        height: 230px;
+        height: 180px;
+        position: relative;
         background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
     }
 
     .banner-titulo-alt
@@ -502,7 +511,6 @@ div.image-upload input
     {
         margin-top: 100px;
     }
-
 }
 
 @media (max-width: 700px)
@@ -544,6 +552,11 @@ div.image-upload input
         max-height: 250px;
         position: relative;
         right: 14px;
+    }
+
+    .carousel
+    {
+        padding-top: 65px;
     }
 }
 
