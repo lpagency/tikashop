@@ -400,6 +400,8 @@ div.image-upload input
     .banner-principal
     {
         background-position: center !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
     }
 }
 
@@ -495,9 +497,6 @@ div.image-upload input
     {
         height: 180px;
         position: relative;
-        background-size: contain !important;
-        background-repeat: no-repeat !important;
-        background-position: center !important;
     }
 
     .banner-titulo-alt

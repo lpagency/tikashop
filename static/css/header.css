@@ -805,12 +805,12 @@ ul.w3-ul li:last-child
     {
         font-size: 23px !important;
         top: 12px;
-        left: 5px;
+        left: 0px;
     }
 
     .units-total
     {
-        left: 13px;
+        left: 5px;
     }
 }
 
@@ -824,7 +824,8 @@ ul.w3-ul li:last-child
 
     .logo 
     {
-        width: 42%;
+        width: auto;
+        height: auto;
         position: relative;
         bottom: 8px;
         margin-left: -9px;
@@ -933,6 +934,13 @@ ul.w3-ul li:last-child
         text-align: left;
         padding-left: 20px;
     }
+
+    .hover-logo
+    {
+        max-width: 150px;
+        max-height: 100px;
+    }
+
 }
 
 @media (max-width: 414px)
@@ -940,6 +948,12 @@ ul.w3-ul li:last-child
     .mobile-header-shopping-cart
     {
         right: 40%;
+    }
+
+
+    .hover-logo
+    {
+        max-width: 130px;
     }
 }
 
@@ -964,5 +978,10 @@ ul.w3-ul li:last-child
     .mobile-header-shopping-cart
     {
         right: 50%;
+    }
+
+    .hover-logo
+    {
+        max-width: 110px;
     }
 }
