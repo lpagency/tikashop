@@ -39,7 +39,7 @@ String.prototype.replaceAll = function(search, replacement) {
     return target.split(search).join(replacement);
 };
 
-$(document).ready(function() 
+$(document).ready(function()
 {
     var params = getIncludeParameters();
     var tag = '';
@@ -51,7 +51,7 @@ $(document).ready(function()
     }
     catch(ex)
     {
-        // nothing here... 
+        // nothing here...
     }
 
     $("#"+tag).addClass("active");
@@ -66,13 +66,13 @@ $(document).ready(function()
         'https://pay.loadingplay.com',
         'https://lpcheckout.ondev.today',
         'https://pay.loadingplay.com');
-    var app_public = $.environmentVar(67,67,67);
+    var app_public = $.environmentVar('tikashop', 'tikashop', 'tikashop');
     var site_name = $.environmentVar('tikashop', 'tikashop', 'tikashop');
 
     var config = {
         'app_public': app_public,
         'base_url': base_url,
-        'products_per_page' : 9, 
+        'products_per_page' : 9,
         'tag': tag,
         'ignore_stock': false,
         'infinite_scroll': false,
@@ -81,7 +81,7 @@ $(document).ready(function()
         'column': 'name',
         'direction': 'asc',
         'operator' :'or',
-        'onLoad': function(products) 
+        'onLoad': function(products)
         {
             // if (products.length === 0)
             // {
@@ -107,7 +107,7 @@ $(document).ready(function()
         // }
         config.tag=$(this).attr('tag');
         // console.log(config);
-        
+
         // facade.page = 1; // o 1 no estoy seguro
         $(".products").html("");
         $(document).ecommerce('destroy');
