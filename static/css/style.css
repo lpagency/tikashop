@@ -34,6 +34,12 @@ div.image-upload.img-editables
     background-position:center;
 }
 
+.banner-principal .image-upload
+{
+    top: 80px;
+    right: 200px;
+}
+
 .carousel-image
 {
     height: 100%;
@@ -396,7 +402,7 @@ div.image-upload input
         background-color: rgba(52, 58, 60, 0.51);
         margin-left: 0px;
     }
-    
+
     .banner-principal
     {
         background-position: center !important;
